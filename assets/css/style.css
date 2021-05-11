@@ -1,0 +1,55 @@
+html{
+    background-color: lightblue;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+.name h1 {
+    background-color: greenyellow;
+    display: block;
+
+}
+nav ul{
+border: 2px gray;
+background-color: green;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+.aboutme{
+    display:flex;
+    flex-direction: row;
+    border: black 5px solid;
+    margin: 5px;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: black 5px solid;
+    margin: 5px;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.flexcontainer{
+    display: flex;
+    border: black 5px solid;
+    margin: 5px;
+}
+
+.project-list-content-right, .project-list-content-left{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    border: black 5px solid;
+    margin: 5px;
+    border-radius: 15%;
+
+}
