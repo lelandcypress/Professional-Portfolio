@@ -1,14 +1,16 @@
 html{
     background-color: lightblue;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
     }
 header{
     border: black 5px solid;
     margin: 5px;
+    font-family: 'Oswald', sans-serif;
 }
 .name{
     display: flex;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
     font-size: 36px;
     border: black 5px solid;
     margin: 5px;
@@ -19,62 +21,93 @@ header{
 
 }
 nav ul{
-border: black 5px solid;
-margin: 5px;
+
 display: flex;
 flex-direction: row;
-justify-content: flex-end;
+justify-content: space-around;
 }
 
 .aboutme{
     display:flex;
-    flex-direction: row;
-    border: black 5px solid;
+    flex-direction: column;
     margin: 5px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
     font-weight: bold;
+    max-width: 70%;
+    justify-content: flex-start;
+    
 }
-.skills {
-    border: black 5px solid;
-    margin: 5px;
-}
-#bio{
-    border: black 5px solid;
-    margin: 5px;
-}
+
 .skills ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: black 5px solid;
-    margin: 5px;
+    padding-top: 25px;    
 }
 
-.logo{
-    max-width: 100px;
-    max-height: 50px;
+.devlogo {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.projlogo {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .flexcontainer{
     display: flex;
+    flex-direction: column;
     border: black 5px solid;
     margin: 5px;
     justify-content: center;
-    min-height: 600px;
+
 }
+#html {
+   max-width: 75%; 
+   max-height: 75%;
+   z-index: -5px;
+  }
+.horiseon figcaption{
+    position: absolute;
+  }
+   
+
 .project-list-header{
-    font-family: 'Oswald', sans-serif;
-    border: black 5px solid;
+    border: black 2px solid;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45px;
 }
-.project-list-content-right, .project-list-content-left{
+
+    .project-list-header h1 {
+    font-family:'Oswald', sans-serif;
+    font-size: 26px;
+    letter-spacing: 5px;
+    }
+
+    .project-list-content-right, .project-list-content-left{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:stretch;
     border: black 5px solid;
     margin: 5px;
-    font-family: 'Oswald', sans-serif;
+}
 
+footer{
+    border: black 5px solid;
+    margin: 5px;
+}
+.contact{
+    display: block;
+    margin: auto;
+    border: black 5px solid;
+    width: 15%;
+    padding-left: 25px;
+    line-height: 3;
+    font-size: 20px;
 }
