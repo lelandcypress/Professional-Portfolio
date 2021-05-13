@@ -1,7 +1,8 @@
 html{
-    background-color: lightblue;
+    background-color: #c9f6fe;
     scroll-behavior: smooth;
     font-family: 'Oswald', sans-serif;
+
     }
 header{
     border: black 5px solid;
@@ -16,7 +17,7 @@ header{
     margin: 5px;
 }
 .name h1 {
-    background-color: greenyellow;
+   
     display: block;
 
 }
@@ -46,8 +47,8 @@ justify-content: space-around;
 }
 
 .devlogo {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .projlogo {
@@ -88,26 +89,35 @@ justify-content: space-around;
     letter-spacing: 5px;
     }
 
-    .project-list-content-right, .project-list-content-left{
+   .project-list-content-left{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:stretch;
-    border: black 5px solid;
     margin: 5px;
 }
 
 footer{
     border: black 5px solid;
     margin: 5px;
+    list-style-type: none;
 }
 .contact{
     display: block;
     margin: auto;
-    border: black 5px solid;
-    width: 15%;
+    width: 25%;
     padding-left: 25px;
     line-height: 3;
     font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+}
+
+.contact p {
+font-size: 32px;
+}
+
+.attributions, .attributions li{
+    font-size: 12px;
 }
