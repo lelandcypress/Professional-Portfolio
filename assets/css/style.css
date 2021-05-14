@@ -99,11 +99,7 @@ main {
    z-index: -5px;
 
   }
-.horiseon figcaption{
-    position: absolute;
-  }
-   
-
+  
 .project-list-header{
     border: black 2px solid;
     margin: 5px;
