@@ -1,16 +1,21 @@
+/*Set Background color and smoot scroll once user clicks Nav Links*/
 html{
     background-color: #B3B6C1;
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
+
+    /*Google Font */
 body{
-    font-family: 'Oswald', sans-serif;
-      
+    font-family: 'Oswald', sans-serif;    
 }
+
+/*Set border for header*/
 header{
 border: black 2px solid;
 margin: 0px;
 }
 
+/*Flex container to allow for reacivity*/
 .name{
     display: flex;
     justify-content: center;
@@ -19,20 +24,22 @@ margin: 0px;
     opacity: 0.8;
 }
 
+/*Michael Souter*/
 .name h1 { 
     display: block;
 }
 
+/*Nav Links*/
 nav ul{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 margin-bottom: 5px;
+font-size: 20px;
 justify-content: space-around;
+}  
 
-}
-    
-
+/*Center for Picture, Logos and short bio*/
 .aboutme{
     display:flex;
     flex-direction: row;
@@ -45,20 +52,22 @@ justify-content: space-around;
     justify-content: flex-start;
     margin: 5px;
 }
+
+/*Final Position for bio text*/
 .placeholder-text {
     flex-wrap: wrap;
     max-width: 75%;
     margin: 10px;
-      }
+}
 
-
-
+/*Profile Picture*/
 .aboutme figure{
     border: black 3px solid;
     width: fit-content;
     height: 100%;
 }
 
+/*HTML, CSS, JS, and SQL logos container*/
 .skills ul {
     display: flex;
     flex-direction: row;
@@ -66,27 +75,32 @@ justify-content: space-around;
     flex-wrap: wrap; 
 }
 
+/*Controls the appearance of actual logos*/
 .devlogo {
     max-width: auto;
     max-height: 100px;
 }
 
+/*Controls the project pictures*/
 .projlogo {
     max-width: auto;
     max-height: 150px;
    }
 
+/*Background Image*/
 main {
     background-image: url("../pics/HTML_Background.jpg");
     background-size: cover;
     width: 100%;
     }
 
+/*Standalone element project header*/    
 .project-list-header h1 {
  font-size: 26px;
  letter-spacing: 5px;
  }
 
+ /*2nd Iteration: Refactor to consolidate styling into h1 element*/
 .project-list-header{
     border: black 2px solid;
     margin: 5px;
@@ -96,43 +110,65 @@ main {
     min-height: 45px;
 }
 
+/*Project container*/
 .flexcontainer {
     display: flex;
     flex-direction: column;
     border: black 5px solid;
     justify-content: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
 
+/*Project Images*/
+.flexcontainer figure{
+position: relative;
+}
+
+/*Text overlayed on images*/
+figcaption{
+    position: relative;
+    color: white;
+    padding: 3px;
+    background-color: teal;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 5;
+    bottom: 50%;
+}
+/*Highlighted Projects*/
 .horiseon{
     text-align: center;
 }
 
+/*Control size of image*/
 .horiseon img {
    max-width: 75%; 
    max-height: 75%;
-
  }
 
- figcaption{
-    color: rgb(255, 255, 255);
- }
-
+ /*Had to style independent for a still unknown reason*/
+ .horiseon figcaption{
+     position: absolute;
+     left: 45%;
+     bottom: 0%;
+     background-color: teal;
+     padding: 20px;
+ } 
+ 
+/*Smaller Images/links*/
 .smaller-projects, .incomplete-projects {
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
   }
- 
 
-
-footer{
+  footer{
     list-style-type: none;
 }
-.contact{
-    
+
+/*div box for contact*/
+.contact{   
     display: block;
     margin: auto;
     width: 50%;
@@ -140,6 +176,7 @@ footer{
     list-style-type: none;
    }
 
+/*Contact list*/
 .contact ul{
     text-align: center;
     font-size: 25px;
@@ -148,6 +185,7 @@ footer{
    
 }
 
+/*Contact Header*/
 .contact p {
 font-size: 32px;
 text-align: center;
@@ -155,4 +193,62 @@ text-align: center;
 
 .attributions, .attributions li{
     font-size: 12px;
+}
+
+/*Creates white shadowing on images*/
+a img:hover {
+-webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+-moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+box-shadow: 0px 0px 3px 5px #f2e1f2; 
+}
+
+/*Interacts with mouse and links*/
+a:link{
+    color: blue ;
+}
+
+/*Interacts with mouse and links*/
+a:visited{
+    color: blueviolet;
+}
+
+/*Interacts with mouse and links*/
+a:hover{
+    color: #f8f8f8
+}
+
+/*Interacts with mouse and links*/
+a:active{
+    color: crimson;
+}
+
+/*media querries*/
+@media only screen and (max-width:720){ 
+    html{
+        background-color: #c71717;     
+    }
+    .devlogo {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    
+    .projlogo {
+        max-width: 110px;
+        max-height: 110px;
+       } 
+    }
+@media only screen and (max-width:640){
+    html{
+        background-color: #B3B6C1;
+    }
+    
+    .devlogo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .projlogo {
+        max-width: 50px;
+        max-height: 50px;
+       }
 }

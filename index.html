@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 
-    <header> <!--flex container-->
-    <div class="name"> <!--Style like crazy -->
+    <header> 
+    <div class="name"> <!--Name-->
         <h1> Michael Souter </h1>
     </div> 
 
     <nav>
-        <ul>
+        <ul>  <!--Navigation Bar-->
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#Contact-Me">Contact Me</a></li>
@@ -27,29 +29,25 @@
      </nav>
   </header> 
 
-
-  <div id = "aboutme" class="aboutme">   <!--flex container-->
+  <aside id = "aboutme" class="aboutme">   <!--Bio Section-->
     <!--Profile Pic-->
     <figure>
         <img src= "assets/pics/profile.PNG">
     </figure>
         <p class ="placeholder-text"> My name is Michael and I'm a new Developer based out of Charleston South Carolina. I specialize in Front End Development, but have a lot of working knowledge with SQL as well. I work great on collaborative teams, and am eager to deploy my newly acquired skills to build something great.          
             I'm ready to hit the ground running, so get in touch and let's talk about what I can do for your team. </p>
-    <div class="skills"> 
+   <!--Logos-->
+   <div class="skills"> 
         <ul> 
-            <li><img class ="devlogo" src="assets/pics/HTML5_Logo_512.png"></li>
-            <li><img class="devlogo" src= "assets/pics/css.png" alt="CSS" ></li>
-            <li><img class="devlogo" src= "assets/pics/javascript-736400_640.png"></li>
-            <li><img class="devlogo" src= "assets/pics/sql-server.png"></li>
+            <li><img class ="devlogo" src="assets/pics/HTML5_Logo_512.png" alt="HTML 5 Logo"></li>
+            <li><img class="devlogo" src= "assets/pics/css.png" alt="CSS Logo" ></li>
+            <li><img class="devlogo" src= "assets/pics/javascript-736400_640.png"  alt="Javascript Logo"></li>
+            <li><img class="devlogo" src= "assets/pics/sql-server.png"  alt="SQL Logo"></li>
         </ul>
-        <p id="bio">
-            
-       
-            </p>
     </div>
    
-  </div>
-
+  </aside>
+<!--Projects Title-->
   <div class="project-list-header"><h1>My Projects</h1></div>
 
   <main id= "projects" class= "flexcontainer"> <!--content container--><!--flex container-->
@@ -61,66 +59,66 @@
              <!--link to gihub-->
         </figure>
         
-        <article class= "smaller-projects"> <!--Deployed Projects-->
+    <article class= "smaller-projects"> <!--Deployed Projects-->
              <!--Prework-->
-            <figure> 
-                <a href="https://lelandcypress.github.io/JavaScript_Prework/"><img class="projlogo" src= "assets/pics/javascript-736400_640.png"> </a>
-                <figcaption>Javascript Prework</figcaption> 
-                 <!--link to gihub-->
-             </figure>
-               
-             <figure> 
-                <a href="https://lelandcypress.github.io/Metallica_Fanpage/"><img class="projlogo" src="assets/pics/favicon.PNG"> </a> 
-                <figcaption>Metallica Fan Page</figcaption>  
+        <figure> 
+           <a href="https://lelandcypress.github.io/JavaScript_Prework/"><img class="projlogo" src= "assets/pics/javascript-736400_640.png"> </a>
+           <figcaption>Javascript Prework</figcaption> 
+        </figure>
+              <!--Fan Page--> 
+        <figure> 
+           <a href="https://lelandcypress.github.io/Metallica_Fanpage/"><img class="projlogo" src="assets/pics/favicon.PNG"> </a> 
+           <figcaption>Metallica Fan Page</figcaption>    
+        </figure> 
+             <!--Scratch Project-->
+        <figure> 
+           <a href="https://scratch.mit.edu/projects/509561835/"><img class="projlogo" src="assets/pics/SpaceCat.PNG"></a>
+           <figcaption>Space Cat vs. Doom Robots</figcaption> 
+        </figure>
+        
+    </article> 
+        
+    <article class= "incomplete-projects">  
+            <!--Password-->
+        <figure id="password"> 
+          <a href="#"><img class="projlogo" src= "assets/pics/javascript-736400_640.png"></a> 
+          <figcaption>Password Generator</figcaption>  
+        </figure>
+             <!--CSS-->
+        <figure id="CSS"> 
+          <a href="#"><img class="projlogo" src= "assets/pics/01-app-desktop.png"></a> 
+          <figcaption>CSS Cheatsheet</figcaption> 
+        </figure>
+             <!--Hardhat-->
+        <figure id="hardhat"> 
+          <a href="#"><img class="projlogo" src= "assets/pics/hard hat.PNG" ></a>  
+           <figcaption>JIPC Youth Page</figcaption> 
                 
-             </figure> 
-             
-             <figure> 
-                <a href="https://scratch.mit.edu/projects/509561835/"><img class="projlogo" src="assets/pics/SpaceCat.PNG"></a>
-                <figcaption>Space Cat vs. Doom Robots</figcaption> 
-             </figure>
-        </article> 
-             <article class= "incomplete-projects">  
-
-             <figure> 
-                <img class="projlogo" src= "assets/pics/javascript-736400_640.png" > 
-                <figcaption>JavaScript Password Generator (coming soon)</figcaption> 
-                <a></a> <!--link to gihub-->
-             </figure>
-             
-             <figure> 
-                <img class="projlogo" src= "assets/pics/01-app-desktop.png" > 
-                <figcaption>CSS Cheatsheet (coming soon)</figcaption> 
-                <a></a> <!--link to gihub-->
-             </figure>
-             
-             <figure> 
-                <img class="projlogo" src= "assets/pics/hard hat.PNG" > 
-                <figcaption>JIPC Youth Page (coming soon)</figcaption> 
-                <a></a> 
-             </figure>
-      </article>
+        </figure>
+    </article>
     
         
-</main>
+    </main>
 </body>
-<footer>
-<div class= "contact">
-    <p id="Contact-Me"> Let's get in touch</p>
-    <ul>
-        
-        <li><a href="https://www.linkedin.com/in/michael-souter-mba-3a61953b/">Linkedin</a></li>
-        
-        <li><a href="https://github.com/lelandcypress">Github</a></li>
-        
-        <li><a href="mailto: souterm1@gmail.com">Email</a></li>
+    <footer>
 
-    </ul>
-</div>
+    <div class= "contact">
+        <p id="Contact-Me"> Let's get in touch</p>
+        
+        <ul>
+        
+            <li><a href="https://www.linkedin.com/in/michael-souter-mba-3a61953b/">Linkedin</a></li>
+        
+            <li><a href="https://github.com/lelandcypress">Github</a></li>
+        
+            <li><a href="mailto: souterm1@gmail.com">Email</a></li>
+
+        </ul>
+    </div>
 <!--Crediting Artists for custom logos-->
-<ul>
-<li class= "attributions">CSS Logo by <a href="https://www.flaticon.com/authors/alfredo-hernandez">Alfredo Hernandez</a></li>
-<li class= "attributions">SQL logo by <a href= "https://www.flaticon.com/authors/pixel-perfect">Pixel Perfect</a></li>
-</ul>
-</footer>
+        <ul>
+            <li class= "attributions">CSS Logo by <a href="https://www.flaticon.com/authors/alfredo-hernandez">Alfredo Hernandez</a></li>
+            <li class= "attributions">SQL logo by <a href= "https://www.flaticon.com/authors/pixel-perfect">Pixel Perfect</a></li>
+        </ul>
+    </footer>
 </html>
