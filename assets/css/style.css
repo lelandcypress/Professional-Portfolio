@@ -223,11 +223,8 @@ a:active{
 }
 
 /*media querries*/
-@media only screen and (max-width:720){ 
-    html{
-        background-color: #c71717;     
-    }
-    .devlogo {
+@media only screen and (max-width:720px){ 
+      .devlogo {
         max-width: 75px;
         max-height: 75px;
     }
@@ -237,7 +234,17 @@ a:active{
         max-height: 110px;
        } 
     }
-@media only screen and (max-width:640){
+
+    figcaption{
+        padding: 2px;
+        background-color: teal;
+        font-weight: bold;
+        font-size: 10px;
+        z-index: 5;
+        bottom: 50%;
+    }
+
+@media only screen and (max-width:640px){
     html{
         background-color: #B3B6C1;
     }
@@ -251,4 +258,13 @@ a:active{
         max-width: 50px;
         max-height: 50px;
        }
+
+   figcaption{
+        padding: 2px;
+        background-color: teal;
+        font-weight: bold;
+        font-size: 5px;
+        z-index: 5;
+        bottom: 50%;
+    }
 }
