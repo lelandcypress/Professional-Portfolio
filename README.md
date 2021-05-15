@@ -4,5 +4,7 @@ First iteration of the Professional portfolio for Michael Souter. Made with HTML
 This iteration includes Psuedo Elements, box effects, and media querries. I still plan on additional styling once I learn more about frameworks and have more projects to add.
 
 
-URL for Deployed Portfolio:
+URL for Deployed Portfolio: https://lelandcypress.github.io/Professional-Portfolio/
+
+
 
