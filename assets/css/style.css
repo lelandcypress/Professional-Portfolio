@@ -7,8 +7,8 @@ body{
       
 }
 header{
-border: black 3px solid;
-margin: 5px;
+border: black 2px solid;
+margin: 0px;
 }
 
 .name{
@@ -16,6 +16,7 @@ margin: 5px;
     justify-content: center;
     font-size: 36px;
     margin: 15px;
+    opacity: 0.8;
 }
 
 .name h1 { 
@@ -28,7 +29,9 @@ flex-direction: row;
 flex-wrap: wrap;
 margin-bottom: 5px;
 justify-content: space-around;
+
 }
+    
 
 .aboutme{
     display:flex;
@@ -40,7 +43,6 @@ justify-content: space-around;
     max-width: 70%;
     height: auto;
     justify-content: flex-start;
-    border: black 5px solid;
     margin: 5px;
 }
 .placeholder-text {
@@ -52,7 +54,7 @@ justify-content: space-around;
 
 
 .aboutme figure{
-    border: black 5px solid;
+    border: black 3px solid;
     width: fit-content;
     height: 100%;
 }
@@ -65,12 +67,12 @@ justify-content: space-around;
 }
 
 .devlogo {
-    max-width: 100px;
+    max-width: auto;
     max-height: 100px;
 }
 
 .projlogo {
-    max-width: 150px;
+    max-width: auto;
     max-height: 150px;
    }
 
@@ -78,28 +80,13 @@ main {
     background-image: url("../pics/HTML_Background.jpg");
     background-size: cover;
     width: 100%;
+    }
 
-}
+.project-list-header h1 {
+ font-size: 26px;
+ letter-spacing: 5px;
+ }
 
-.flexcontainer{
-    display: flex;
-    flex-direction: column;
-    border: black 5px solid;
-    margin: 5px;
-    justify-content: center;
-
-}
-.horiseon{
-    text-align: center;
-}
-
-.horiseon img {
-   max-width: 75%; 
-   max-height: 75%;
-   z-index: -5px;
-
-  }
-  
 .project-list-header{
     border: black 2px solid;
     margin: 5px;
@@ -109,46 +96,61 @@ main {
     min-height: 45px;
 }
 
-.project-list-header h1 {
- font-size: 26px;
- letter-spacing: 5px;
-    }
-
-.smaller-projects-top,.smaller-projects-bottom {
-margin: 25px;
-display: flex;
-justify-content: space-around;
-}
-
-
-
-figcaption{
-    color: rgb(255, 255, 255);
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    border: black 5px solid;
+    justify-content: center;
+    margin-bottom: 10px;
     
 }
 
+.horiseon{
+    text-align: center;
+}
+
+.horiseon img {
+   max-width: 75%; 
+   max-height: 75%;
+
+ }
+
+ figcaption{
+    color: rgb(255, 255, 255);
+ }
+
+.smaller-projects, .incomplete-projects {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+ 
+
+
 footer{
-    border: black 5px solid;
-    margin: 5px;
     list-style-type: none;
 }
 .contact{
-    border: black 5px solid;
-    margin: 5px;
+    
     display: block;
     margin: auto;
     width: 50%;
     padding-left: 25px;
     list-style-type: none;
-}
+   }
 
 .contact ul{
     text-align: center;
-
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+   
 }
 
 .contact p {
 font-size: 32px;
+text-align: center;
 }
 
 .attributions, .attributions li{
